@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body{
+    background: #eee;
+    font-family: Roboto,Arial,sans-serif;
+    letter-spacing: 0;
+    align-items: center;
+}
+#headerblock{
+    background-color:#2874f0;
+    height: 56px;
+    padding-top: 10px;
+}
+#headerblock article{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+.leftblock{
+  width: 70%;
+  display: flex;
+}
+.rigthblock{
+    width: 30%;
+}
+
+.logoblock{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.searchblock{
+    width: 85%;
+}
+.parentlogo img{
+  width: 75px;
+}
+.explore{
+    color: white;
+}
+.plus{
+    color: #ffe500;
+    font-weight: 600;
+    margin-right: 2px;
+}
+.logoblock a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 11px;
+    font-style: italic;
+}
+.childlogo img{
+    width: 15px;
+}
+/* ----Search Block Starts Here */
+.searchblock form{
+    display: flex;
+}
+.searchblock form input{
+    width: 80%;
+    height: 40px;
+    padding: 0px;
+    border-radius: 3px;
+    font-size: large;
+
+}
+.searchicon{
+    position: relative;
+}
+ ::placeholder{
+     padding: 10px;
+ }
+.searchblock i{
+    color:slategrey;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+    left: -35px;
+
+}
+/* ----Search Block End Here*/
+.rightblock{
+    width: 30%;
+    justify-content: center;
+    display: flex;
+}
+
+.rightblock > ul{
+    list-style: none;
+    display: flex;
+
+}
+.rightblock > ul li{ 
+margin: 0px 30px;
+margin-top: 5px;
+position: relative;
+}
+.rightblock >ul i{
+    flex: 1;
+}
+.rightblock > ul li a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: capitalize;
+   
+}
+.rightblock .login{
+    background-color:#fff;
+    color:#2874f0 ;
+    padding: 8px 50px;
+    font-weight: bold;
+}
+.dropdown{
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    top: 35px;
+    padding: 0px;
+    width: 250px;
+    display: none;   
+    margin: 8px -67px;
+    z-index: 1;
+}
+.dropdown li{
+    margin: 0 !important;
+}
+.dropdown li a
+{
+    padding: 0;
+    margin: 0;
+    color: #111 !important;
+    padding: 12px 18px;
+    display: inline-block ;
+    width: 100%;
+}
+#signup{
+    position: absolute;
+    top: -42px;
+    left: 177px;
+    border: none;
+    color: #2874f0;
+}
+.rightblock ul li:hover > .dropdown{
+    display: block;
+}
+.arrow-up{
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    top: -13px;
+    left: 86px;
+    margin: auto;
+
+}
+.dropdown aside{
+    position: absolute;
+}
+
+
+/* Offer block starts here */
+ #offerblock{ 
+    height: 110px;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+
+}
+#offerblock  article{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 110px;
+    align-items: center;
+}
+#offerblock article div{
+    flex: 1;
+}
+#offerblock article div img{
+    width: 60px;
+}
+#offerblock article div a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #111;
+    text-align:center ;
+}
+
+#cart {
+    display: flex;
+   }
+span{ 
+    display: inline-block;
+}
+/* Menu middle section  */
+#menumiddle {
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+#menumiddle nav{
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#menumiddle nav > ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+#menumiddle nav ul li{
+    margin-right: 72px;
+    position: relative;
+}
+#menumiddle nav >ul li a{
+    color: #111;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+}
+.megamiddle{
+    position: absolute;
+    width: 1300px !important;
+    background-color: #fff;
+    height: 90vh;
+    top: 45px;
+    text-align: left;
+    display: none;
+    font-weight: lighter;
+
+}
+.megamiddle div{
+    flex: 1;
+}
+.megamiddle div:nth-child(odd){
+    background-color: #fff;
+}
+.megamiddle div:nth-child(even){
+    background-color:#b9b9b92e;
+}
+.megamiddle ul{
+    list-style: none;
+}
+.megamiddle ul li{
+    margin: 10px 0 !important;
+}
+.megamiddle ul li a{
+    padding: 5px 30px;
+    display: block;
+    font-weight: normal !important;
+    font-size: 10px;
+    
+}
+#menumiddle ul li:hover > .megamiddle{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sliderblock article img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+
+
